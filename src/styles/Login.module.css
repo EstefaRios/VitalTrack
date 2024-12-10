@@ -1,0 +1,98 @@
+.loginBackground {  /* Estilo para el fondo de la página de login */
+  position: relative;  /* Posición relativa para permitir posicionar elementos dentro */
+  height: 100vh;  /* Establece la altura del fondo a 100% de la altura de la ventana del navegador */
+  background-size: cover;  /* Ajusta la imagen de fondo para cubrir todo el espacio disponible */
+  background-position: center;  /* Centra la imagen de fondo */
+  overflow: hidden;  /* Evita que los elementos se desborden fuera del contenedor */
+}
+
+.loginContainer {  /* Estilo para el contenedor principal del formulario de login */
+  position: absolute;  /* Posiciona el contenedor de forma absoluta dentro de su contenedor */
+  top: 50%;  /* Coloca el contenedor en la mitad vertical de la pantalla */
+  left: 50%;  /* Coloca el contenedor en la mitad horizontal de la pantalla */
+  transform: translate(-50%, -50%);  /* Ajusta la posición del contenedor para centrarlo */
+  width: 100%;  /* Ancho completo del contenedor */
+  max-width: 400px;  /* Establece un ancho máximo de 400px */
+  z-index: 2;  /* Asegura que el contenedor esté encima de otros elementos */
+  padding: 30px 20px;  /* Espacio interior alrededor del contenido del contenedor */
+  box-sizing: border-box;  /* Incluye el padding en el cálculo del ancho y alto del contenedor */
+  max-height: 400px;  /* Establece una altura máxima de 400px */
+  height: auto;  /* Permite que la altura se ajuste automáticamente */
+  background-color: transparent;  /* Fondo transparente para el contenedor */
+}
+
+.loginBox {  /* Estilo para el cuadro donde se encuentra el formulario de login */
+  background-color: rgb(255, 255, 255);  /* Fondo blanco para el cuadro */
+  padding: 40px;  /* Añade espacio interior alrededor del contenido del cuadro */
+  border-radius: 8px;  /* Bordes redondeados para el cuadro */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Sombra suave alrededor del cuadro */
+  text-align: center;  /* Centra el contenido del cuadro */
+}
+
+h2 {  /* Estilo para el título del formulario de login */
+  margin-bottom: 20px;  /* Añade espacio debajo del título */
+  color: #003366;  /* Color del texto en azul oscuro */
+  font-size: 24px;  /* Tamaño de fuente grande */
+  font-weight: bold;  /* Establece el texto en negrita */
+  letter-spacing: 1px;  /* Añade espacio entre las letras */
+}
+
+.inputGroup {  /* Estilo para cada grupo de entrada en el formulario */
+  margin-bottom: 20px;  /* Añade espacio debajo de cada grupo de entrada */
+}
+
+.inputGroup label {  /* Estilo para las etiquetas de los campos de entrada */
+  display: block;  /* Hace que la etiqueta sea un bloque para ocupar toda la línea */
+  font-weight: bold;  /* Establece las etiquetas en negrita */
+  margin-bottom: 8px;  /* Añade espacio debajo de la etiqueta */
+  color: #3A3A3A;  /* Color de la etiqueta en gris oscuro */
+}
+
+.inputGroup input {  /* Estilo para los campos de entrada */
+  width: 100%;  /* Hace que el campo de entrada ocupe todo el ancho disponible */
+  padding: 10px;  /* Añade espacio dentro del campo de entrada */
+  border: 1px solid #ccc;  /* Borde gris claro */
+  border-radius: 5px;  /* Bordes redondeados para el campo de entrada */
+  font-size: 16px;  /* Tamaño de fuente para el texto dentro del campo */
+}
+
+.inputGroup input:focus {  /* Estilo para el campo de entrada cuando está en foco */
+  border-color: #98A8F8;  /* Cambia el color del borde a azul claro cuando el campo está en foco */
+  outline: none;  /* Elimina el contorno predeterminado al hacer foco en el campo */
+}
+
+.links {  /* Estilo para el contenedor de los enlaces debajo del formulario */
+  margin-bottom: 20px;  /* Añade espacio debajo del contenedor de enlaces */
+}
+
+.link {  /* Estilo para cada enlace */
+  color: #98A8F8;  /* Color del texto en azul claro */
+  text-decoration: none;  /* Elimina el subrayado del enlace */
+  font-size: 14px;  /* Tamaño de fuente pequeño para los enlaces */
+  margin-right: 10px;  /* Añade espacio a la derecha de cada enlace */
+  font-weight: 600;  /* Establece el texto en un peso de fuente medio */
+  transition: color 0.3s ease;  /* Transición suave para el color al hacer hover */
+}
+
+.link:hover {  /* Estilo para los enlaces cuando se pasa el ratón por encima */
+  color: #3A3A3A;  /* Cambia el color a gris oscuro cuando se hace hover */
+  text-decoration: underline;  /* Subraya el enlace cuando se hace hover */
+}
+
+.loginButton {  /* Estilo para el botón de login */
+  width: 100%;  /* Hace que el botón ocupe todo el ancho disponible */
+  padding: 14px;  /* Añade espacio dentro del botón */
+  background-color: #98A8F8;  /* Color de fondo azul claro para el botón */
+  color: white;  /* Color del texto en blanco */
+  border: none;  /* Elimina el borde del botón */
+  border-radius: 5px;  /* Bordes redondeados para el botón */
+  font-size: 16px;  /* Tamaño de fuente grande para el texto del botón */
+  font-weight: bold;  /* El texto del botón está en negrita */
+  cursor: pointer;  /* El cursor se convierte en una mano cuando se pasa sobre el botón */
+  transition: background-color 0.3s ease, transform 0.2s ease;  /* Transiciones suaves para el color y la escala */
+}
+
+.loginButton:hover {  /* Estilo para el botón cuando se pasa el ratón por encima */
+  background-color: #3A3A3A;  /* Cambia el color de fondo a gris oscuro */
+  transform: scale(1.05);  /* Aumenta ligeramente el tamaño del botón */
+}

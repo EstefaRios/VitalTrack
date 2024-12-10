@@ -1,0 +1,141 @@
+.home-header {  /* Estilo para el encabezado de la página principal */
+  display: flex;  /* Usamos Flexbox para organizar los elementos de forma horizontal */
+  justify-content: space-between;  /* Distribuye los elementos de forma que estén a los extremos opuestos */
+  align-items: center;  /* Centra los elementos verticalmente dentro del contenedor */
+  padding: 20px;  /* Añade espacio interior alrededor de los elementos */
+  background-color: #98A8F8;  /* Color de fondo azul claro para el encabezado */
+  color: #FAF7F0;  /* Color de texto blanco */
+}
+
+.logo {  /* Estilo para el logo en el encabezado */
+  height: 50px;  /* Establece una altura fija para el logo */
+}
+
+.slogan {  /* Estilo para el eslogan junto al logo */
+  font-size: 18px;  /* Tamaño de fuente más pequeño para el eslogan */
+  font-weight: bold;  /* El eslogan está en negrita */
+}
+
+.profile {  /* Contenedor del perfil del usuario */
+  position: relative;  /* Posición relativa para permitir que el submenú se posicione dentro de este contenedor */
+}
+
+.profile-button {  /* Estilo para el botón del perfil que muestra el menú desplegable */
+  background: none;  /* Sin fondo para el botón */
+  border: none;  /* Sin borde para el botón */
+  color: white;  /* Color de texto blanco */
+  cursor: pointer;  /* El cursor cambia a mano cuando se pasa sobre el botón */
+}
+
+.profile-dropdown {  /* Estilo para el menú desplegable del perfil */
+  position: absolute;  /* El menú se posiciona absolutamente respecto al contenedor del perfil */
+  top: 100%;  /* Coloca el menú justo debajo del botón del perfil */
+  right: 0;  /* Alinea el menú a la derecha del contenedor del perfil */
+  background: white;  /* Fondo blanco para el menú */
+  color: black;  /* Color de texto negro */
+  border-radius: 5px;  /* Bordes redondeados para el menú */
+  display: none;  /* El menú está oculto por defecto */
+}
+
+.profile:hover .profile-dropdown {  /* Muestra el menú desplegable cuando el perfil es hovered */
+  display: block;  /* Muestra el menú cuando el usuario pasa el ratón sobre el perfil */
+}
+
+.menu {  /* Estilo para el contenedor principal del menú */
+  background-color: #BCCEF8;  /* Color de fondo azul claro para el menú */
+  padding: 10px;  /* Añade espacio interior en el menú */
+}
+
+.menu ul {  /* Estilo para la lista dentro del menú */
+  list-style: none;  /* Elimina los puntos o viñetas predeterminados de la lista */
+  padding: 0;  /* Elimina el espacio interior de la lista */
+}
+
+.menu li {  /* Estilo para cada elemento de la lista dentro del menú */
+  position: relative;  /* Posición relativa para permitir que los submenús se posicionen correctamente */
+  padding: 10px;  /* Añade espacio alrededor de cada elemento */
+  cursor: pointer;  /* Cambia el cursor a una mano al pasar sobre el elemento */
+}
+
+.menu li ul {  /* Estilo para los submenús ocultos */
+  display: none;  /* Los submenús están ocultos por defecto */
+  position: absolute;  /* Posiciona el submenú de manera absoluta dentro del contenedor li */
+  left: 100%;  /* Coloca el submenú a la derecha del elemento principal */
+  top: 0;  /* Alinea el submenú al nivel vertical de su elemento padre */
+  background-color: #CDFCF6;  /* Color de fondo azul claro para los submenús */
+}
+
+.menu li:hover > ul {  /* Muestra el submenú cuando se pasa el ratón sobre el elemento de la lista */
+  display: block;  /* Muestra el submenú cuando el elemento de la lista está en estado hover */
+}
+
+.home-header {  /* Estilo duplicado para el encabezado (repetido) */
+  display: flex;  /* Usamos Flexbox para organizar los elementos de forma horizontal */
+  justify-content: space-between;  /* Distribuye los elementos de forma que estén a los extremos opuestos */
+  align-items: center;  /* Centra los elementos verticalmente dentro del contenedor */
+  padding: 20px;  /* Añade espacio interior alrededor de los elementos */
+  background-color: #98A8F8;  /* Color de fondo azul claro para el encabezado */
+  color: #FAF7F0;  /* Color de texto blanco */
+}
+
+.logo {  /* Estilo duplicado para el logo */
+  height: 50px;  /* Establece una altura fija para el logo */
+}
+
+.slogan {  /* Estilo duplicado para el eslogan */
+  font-size: 18px;  /* Tamaño de fuente más pequeño para el eslogan */
+  font-weight: bold;  /* El eslogan está en negrita */
+}
+
+.profile {  /* Estilo duplicado para el contenedor de perfil */
+  position: relative;  /* Posición relativa para permitir que el submenú se posicione dentro de este contenedor */
+}
+
+.profile-button {  /* Estilo duplicado para el botón de perfil */
+  background: none;  /* Sin fondo para el botón */
+  border: none;  /* Sin borde para el botón */
+  color: white;  /* Color de texto blanco */
+  cursor: pointer;  /* El cursor cambia a mano cuando se pasa sobre el botón */
+}
+
+.profile-dropdown {  /* Estilo duplicado para el menú desplegable del perfil */
+  position: absolute;  /* El menú se posiciona absolutamente respecto al contenedor del perfil */
+  top: 100%;  /* Coloca el menú justo debajo del botón del perfil */
+  right: 0;  /* Alinea el menú a la derecha del contenedor del perfil */
+  background: white;  /* Fondo blanco para el menú */
+  color: black;  /* Color de texto negro */
+  border-radius: 5px;  /* Bordes redondeados para el menú */
+  display: none;  /* El menú está oculto por defecto */
+}
+
+.profile:hover .profile-dropdown {  /* Muestra el menú desplegable cuando el perfil es hovered */
+  display: block;  /* Muestra el menú cuando el usuario pasa el ratón sobre el perfil */
+}
+
+.menu {  /* Estilo duplicado para el contenedor principal del menú */
+  background-color: #BCCEF8;  /* Color de fondo azul claro para el menú */
+  padding: 10px;  /* Añade espacio interior en el menú */
+}
+
+.menu ul {  /* Estilo duplicado para la lista dentro del menú */
+  list-style: none;  /* Elimina los puntos o viñetas predeterminados de la lista */
+  padding: 0;  /* Elimina el espacio interior de la lista */
+}
+
+.menu li {  /* Estilo duplicado para cada elemento de la lista dentro del menú */
+  position: relative;  /* Posición relativa para permitir que los submenús se posicionen correctamente */
+  padding: 10px;  /* Añade espacio alrededor de cada elemento */
+  cursor: pointer;  /* Cambia el cursor a una mano al pasar sobre el elemento */
+}
+
+.menu li ul {  /* Estilo duplicado para los submenús ocultos */
+  display: none;  /* Los submenús están ocultos por defecto */
+  position: absolute;  /* Posiciona el submenú de manera absoluta dentro del contenedor li */
+  left: 100%;  /* Coloca el submenú a la derecha del elemento principal */
+  top: 0;  /* Alinea el submenú al nivel vertical de su elemento padre */
+  background-color: #CDFCF6;  /* Color de fondo azul claro para los submenús */
+}
+
+.menu li:hover > ul {  /* Muestra el submenú cuando se pasa el ratón sobre el elemento de la lista */
+  display: block;  /* Muestra el submenú cuando el elemento de la lista está en estado hover */
+}

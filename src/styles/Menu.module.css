@@ -1,0 +1,143 @@
+/* Header principal */
+.header {
+  background-color: #ffffff; /* Fondo blanco para el área del logo */
+  padding: 10px 20px; /* Espaciado interno del header */
+  border-bottom: 2px solid #98A8F8; /* Línea divisoria en la parte inferior del header */
+}
+
+/* Contenedor del logo y eslogan */
+.logoContainer {
+  display: flex; /* Usa flexbox para alinear los elementos dentro del contenedor */
+  align-items: center; /* Alinea los elementos verticalmente al centro */
+  gap: 10px; /* Espacio entre los elementos */
+}
+
+.logo {
+  height: 60px; /* Tamaño ajustado para el logo */
+}
+
+.slogan {
+  font-size: 18px; /* Tamaño de fuente para el eslogan */
+  color: #333; /* Color de texto oscuro */
+  font-weight: bold; /* El eslogan tiene texto en negrita */
+}
+
+/* Menú principal */
+.menu {
+  background-color: #98A8F8; /* Fondo azul claro para el menú */
+  padding: 10px 0; /* Espaciado interno arriba y abajo del menú */
+}
+
+.menuList {
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0; /* Elimina el padding predeterminado */
+  display: flex; /* Usa flexbox para los ítems del menú */
+  justify-content: center; /* Centra los ítems horizontalmente */
+  gap: 20px; /* Espacio entre los elementos del menú */
+}
+
+.menuList li {
+  position: relative; /* Posición relativa para los submenús */
+  cursor: pointer; /* Cambia el cursor a mano para mostrar que es clickeable */
+  padding: 10px 15px; /* Espaciado interno de los elementos del menú */
+  font-size: 16px; /* Tamaño de fuente para los ítems del menú */
+  color: white; /* Color blanco para el texto */
+  border-radius: 5px; /* Bordes redondeados en los ítems del menú */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para el hover */
+}
+
+.menuList li:hover {
+  background-color: #BCCEF8; /* Cambia el fondo a azul más claro al pasar el ratón */
+  transform: scale(1.05); /* Agranda ligeramente el ítem del menú */
+}
+
+/* Submenú */
+.subMenu {
+  position: absolute; /* Posición absoluta para el submenú dentro del ítem */
+  background-color: #BCCEF8; /* Fondo azul claro para el submenú */
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0; /* Elimina el margen */
+  padding: 8px 0; /* Espaciado interno vertical */
+  top: 100%; /* Posiciona el submenú justo debajo del ítem */
+  left: 0; /* Alinea el submenú a la izquierda del ítem */
+  border-radius: 8px; /* Bordes redondeados en el submenú */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera para el submenú */
+  display: none; /* El submenú está oculto por defecto */
+  flex-direction: column; /* Coloca los elementos del submenú en una columna */
+  gap: 5px; /* Espacio entre los ítems del submenú */
+  z-index: 1000; /* Asegura que el submenú quede encima de otros elementos */
+}
+
+/* Mostrar submenú al pasar el mouse */
+.menuList li:hover > .subMenu {
+  display: flex; /* Muestra el submenú cuando se pasa el ratón por encima del ítem */
+}
+
+/* Submenú */
+.subMenu {
+  position: absolute; /* Posición absoluta para el submenú */
+  background: linear-gradient(135deg, #98A8F8, #BCCEF8); /* Fondo degradado para el submenú */
+  list-style: none; /* Elimina los puntos de la lista */
+  margin: 0; /* Elimina el margen */
+  padding: 10px 0; /* Espaciado interno vertical */
+  top: 100%; /* Posiciona el submenú debajo del ítem del menú */
+  left: 0; /* Alinea el submenú a la izquierda */
+  border-radius: 12px; /* Bordes redondeados en el submenú */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra elegante para el submenú */
+  display: none; /* Oculto por defecto */
+  flex-direction: column; /* Los elementos del submenú están en columna */
+  gap: 8px; /* Espacio entre los elementos del submenú */
+  z-index: 1000; /* Asegura que el submenú esté encima de otros elementos */
+  animation: fadeIn 0.3s ease; /* Animación para que el submenú aparezca */
+  min-width: 180px; /* Ancho mínimo para el submenú */
+}
+
+/* Animación de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Comienza desde invisible */
+    transform: translateY(-10px); /* Comienza ligeramente desplazado hacia arriba */
+  }
+  to {
+    opacity: 1; /* Termina completamente visible */
+    transform: translateY(0); /* Vuelve a su posición original */
+  }
+}
+
+/* Mostrar submenú al pasar el mouse */
+.menuList li:hover > .subMenu {
+  display: flex; /* Muestra el submenú al hacer hover sobre el ítem */
+}
+
+/* Elementos del submenú */
+.subMenu li {
+  cursor: pointer; /* Cambia el cursor a mano para los elementos clickeables */
+  padding: 10px 15px; /* Espaciado interno de los elementos del submenú */
+  font-size: 15px; /* Tamaño de fuente para los elementos del submenú */
+  color: white; /* Texto blanco en los elementos */
+  background: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+  border-radius: 8px; /* Bordes redondeados */
+  transition: background 0.3s ease, transform 0.2s ease; /* Transición para el hover */
+}
+
+/* Efectos de hover en los elementos del submenú */
+.subMenu li:hover {
+  background: #FAF7F0; /* Fondo claro en el hover */
+  color: #98A8F8; /* Texto azul claro en el hover */
+  transform: scale(1.05); /* Agranda ligeramente el elemento al hacer hover */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Sombra elegante al hacer hover */
+}
+
+/* Submenú secundario */
+.subMenu .subMenu {
+  top: 0; /* Coloca el submenú secundario a nivel del submenú principal */
+  left: 100%; /* Coloca el submenú secundario a la derecha del submenú principal */
+  margin-left: 10px; /* Añade espacio entre los submenús */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Sombra en el submenú secundario */
+}
+
+/* Transición para el submenú secundario */
+.subMenu .subMenu li {
+  transition: all 0.3s ease; /* Transición suave para los elementos del submenú secundario */
+}

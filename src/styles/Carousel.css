@@ -1,0 +1,13 @@
+/* Contenedor principal del carrusel */
+.carousel-container {
+  width: 100vw;  /* ancho de la ventana */
+  height: 100vh;  /* alto de la ventana */
+  position: absolute;  /* Coloca el contenedor en una posición absoluta para que se solape con otros elementos si es necesario */
+  display: flex;  /* Utiliza flexbox para alinear y centrar los elementos hijos dentro del contenedor */
+  justify-content: center;  /* Centra el contenido horizontalmente */
+  align-items: center;  /* Centra el contenido verticalmente */
+  background-color: transparent;  /* Establece el color de fondo como transparente por defecto (si no hay imagen cargada) */
+  transition: background-image 1s ease-in-out;  /* Aplica una transición suave cuando se cambie la imagen de fondo (1 segundo) */
+  overflow: hidden;  /* Asegura que cualquier contenido fuera de los límites del contenedor no se vea (evita la barra de desplazamiento) */
+  z-index: -1;  /* Coloca el carrusel detrás de los demás elementos en la página  */
+}
